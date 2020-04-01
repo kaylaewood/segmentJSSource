@@ -31,10 +31,6 @@
         analytics.page();
       }
     }();
-    analytics.identify('12345', {
-      email: 'example@example.com',
-      name: 'Jake Peterson'
-    });
     </script>
     <title>Segment U Practice</title>
   </head>
@@ -47,5 +43,11 @@
       <br/> Age: <input name="age" type="text" />
       <input name="submit" type="submit" />
     </form>
+    <script type="text/text/javascript">
+      analytics.identify('12345', {
+        email: 'example@example.com',
+        name: 'Jake Peterson'
+      });
+    </script>
   </body>
 </html>

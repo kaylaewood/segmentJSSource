@@ -37,16 +37,16 @@
   <body>
     <h1>Segment U Practice</h1>
     <form name="form" onsubmit="identify(event)">
-      <br/> Name: <input name="name" type="text" />
-      <br/> Email: <input name="email" type="text" />
+      <br/> Name: <input class='name' name="name" type="text" />
+      <br/> Email: <input class='email' name="email" type="text" />
       <br/> Zip Code: <input name="zip" type="text" />
       <br/> Age: <input name="age" type="text" />
       <input name="submit" type="submit" />
     </form>
     <script type="text/text/javascript">
       analytics.identify('12345', {
-        email: 'example@example.com',
-        name: 'Jake Peterson'
+        email: document.querySelector('.email').value,
+        name: document.querySelector('.name').value
       });
     </script>
   </body>
